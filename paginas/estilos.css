@@ -1,0 +1,883 @@
+body {
+  background-image: linear-gradient(to bottom,white, rgb(64, 64, 230));
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+/* MENU BARRA */
+
+.menuBarra {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px;
+  justify-items: center;
+  align-items: center;
+  justify-content: stretch;
+  align-content: stretch;
+}
+
+.menu {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navegacion {
+  width:100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 6px;
+  align-items: center;
+  justify-items: center;
+  justify-content: stretch;
+  align-content: stretch;
+  margin: 0px;
+  background-color: black;
+}
+
+.navegacion ul {
+  list-style: none;
+}
+
+.menu>li {
+  position: relative;
+  display: inline-block;
+}
+
+.menu>li>a {
+  display: block;
+  padding: 0px 50px;
+  color: white;
+  font-family: 'Murecho', sans-serif;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: rgb(184, 150, 105);
+  transition: all .3s;
+}
+
+.submenu {
+  position: absolute;
+  background: rgba(12, 3, 176, 0.865);
+  width: 120px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+  overflow: hidden;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-family: 'Murecho', sans-serif; 
+  text-decoration: none;
+}
+
+.menuBarra li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+/* MENU BARRA */
+
+/* FOOTER */
+
+.pie-pagina{
+  width: 100%;
+  height: 42vh;
+  background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 100%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+
+.pie-pagina.grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina.grupo-1 .box img{
+  width: 250px;
+}
+
+.pie-pagina.grupo-1 .box h2{
+ color: white;
+ margin-bottom: 25px;
+ font-size: 20px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pie-pagina .grupo-1 .box p{
+  color: white;
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  margin-right: 30px;
+  background-color: rgb(11, 11, 133);
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: #0e2841;
+  padding: 10px 10px;
+  text-align: center;
+  color: white;
+}
+/* FOOTER */
+
+/* INDEX */
+
+.totalContainer{
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.indexH1yH2 {
+  color: rgb(2, 2, 2);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  animation-name: uch;
+  animation-duration: 3.5s;
+  animation-direction: alternate;
+}
+
+@keyframes uch {
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+h1 {
+  color: red;
+  letter-spacing: 10px;
+  word-spacing: 1px;
+  font-size: 34px;
+}
+
+h2 {
+  color: rgb(193, 167, 167);
+  text-decoration: none;
+  letter-spacing: 1px;
+  word-spacing: 0px;  
+  font-size: 27px;
+}
+
+.indexH2 {
+  color: red;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 10px;
+  grid-gap: 1px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: stretch;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin: 10px 10px 10px 10px;
+  padding: 0px;
+  border: 5px;
+  font-family: 'Bitter', serif;
+  font-size: 29px;
+}
+
+.parrafoIndex {
+  color: black;
+  text-decoration: none;
+  display: flex;justify-items: center;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+  letter-spacing: 1px;
+  margin: 5px 10px 5px 10px;
+  padding: 0px;
+  border: 5px;
+  font-family: 'Bitter', serif;
+  font-size: 20px;
+}
+
+.indexH2yParrafo{
+  animation-name: indexh2yparrafo;
+  animation-duration: 6s;
+  animation-direction: alternate;
+}
+
+@keyframes indexh2yparrafo {
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+
+/* .IndexImage {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: 30%;
+  gap: 5px;
+  transform: translate(0px, 30px);
+  animation-name: aparecer;
+  animation-duration: 7s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.indexImage1 {
+  height: 46vh;
+  width: 100%;
+  background-image: url("../imagen/subaruwrc.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 78vh;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  transform: translate(0px, 0px);
+
+}
+
+.indexImage2 {
+  height: 46vh;
+  width: 100%;
+  background-image: url("../imagen/bmw.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 80vh;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  transform: translate(0px, 0px);
+}
+
+.indexImage3 {
+  height: 46vh;
+  width: 100%;
+  background-image: url("../imagen/bmw2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 73vh;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  transform: translate(0px, 0px);
+} */
+
+
+
+
+/* INDEX */
+
+
+/* EMPRESA */
+
+
+
+.empresaH1 {
+  color: red;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: stretch;
+  margin: 10px 10px 10px 10px;
+  padding: 0px;
+  border: 5px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height:  20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  animation-name: empresah1;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes empresah1 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.empresaH2 {
+  color: rgb(193, 167, 167);
+  display: flex;
+  justify-content: start;
+  justify-items: start;
+  align-items: stretch;
+  align-content: stretch;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height:  20px;
+  margin: 10px 10px;
+  padding: 10px;
+  border: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 27px;
+}  
+
+.empresaParrafo {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  justify-items: start;
+  align-items: stretch;
+  align-content: stretch;
+  word-spacing: 1.5px;
+  margin-left: 10px;
+  margin-right: 5px;
+  font-family: 'Bitter', serif;
+  font-size: 19px;
+}
+
+.empresah2yparrafo {
+  animation-name: empresah2yparrafo;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes empresah2yparrafo {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.empresaImage {
+  height: 80vh;
+  width: 100%;
+  background-image: url("../imagen/raceteam.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 30%;
+  gap: 5px;
+  transform: translate(0px, 30px);
+  align-items: top;
+  align-content: top;
+  justify-content: top;
+  margin: 10px 0px; 
+  padding: 10px 0px;
+  border: 0px;
+  transform: translate(0px, 0px);
+  animation-name: empresaimage;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes empresaimage {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+/* EMPRESA */
+
+
+/* PRODUCTOS */
+
+.productosH1 {
+  color: red;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: stretch;
+  margin: 10px 10px 10px 10px;
+  padding: 0px;
+  border: 5px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height:  20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.productosH2 {
+  color: rgb(193, 167, 167);
+  display: flex;
+  justify-content: start;
+  justify-items: start;
+  align-items: stretch;
+  align-content: stretch;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height:  20px;
+  margin: 10px 10px;
+  padding: 0px;
+  border: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.productoh1yh2{
+  animation-name: productoh1yh2;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes productoh1yh2 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.ImgEscape0{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  justify-items: start;
+  align-items: start;
+  justify-content: start;
+  align-content: start;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  animation-name: imgescape;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes imgescape {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+  
+
+
+.containterImgEscape1{
+  height: 250px;
+  width: 49%;
+  background-image: url("../imagen/escape1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  margin: 5px;
+  padding: 0px;
+  border: 5px;
+}
+
+.containterImgEscape2{
+  height: 250px;
+  width: 49%;
+  background-image: url("../imagen/escape2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  margin: 5px;
+  padding: 0px;
+  border: 5px;
+}
+
+.containterImgEscape3{
+  height: 250px;
+  width: 49%;
+  background-image: url("../imagen/escape4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  margin: 5px;
+  padding: 0px;
+  border: 5px;
+}
+
+.containterImgEscape4{
+  height: 250px;
+  width: 49%;
+  background-image: url("../imagen/escape6.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  margin: 5px;
+  padding: 0px;
+  border: 5px;
+}
+
+.containterImgEscape5{
+  height: 250px;
+  width: 49%;
+  background-image: url("../imagen/escape7.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  margin: 5px;
+  padding: 0px;
+  border: 5px;
+}
+
+.containterImgEscape6{
+  height: 250px;
+  width: 49%;
+  background-image: url("../imagen/escape8.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  margin: 5px;
+  padding: 0px;
+  border: 5px;
+}
+/* PRODUCTOS */
+
+
+/* SERVICIOS */
+
+.serviciosH1 {
+  color: red;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  text-indent: center;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height:  20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  animation-name: servicioH1;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-direction: ;
+  animation-iteration-count: 1;
+}
+
+@keyframes servicioH1 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.servicioImag{
+  background-image: url("../imagen/technical-drawing-g75c35b595_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: 10vh;
+  height: 55vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 30%;
+  gap: 5px;
+  transform: translate(0px, 30px);
+  align-items: top;
+  align-content: top;
+  justify-content: top;
+  margin: 10px 0px; 
+  padding: 10px 0px;
+  border: 0px;
+  animation-name: servImg;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  animation-direction:alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes servImg{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.serviciosH2H3 {
+  text-decoration: none;
+  justify-content: left;
+  text-align: left;
+  text-indent: left;
+  margin: 5px;
+  padding: 5px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation-name: servh1h2;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-direction:alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes servh1h2{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.serviciosH2H3 h2{
+  color: rgb(101, 101, 101);
+  line-height: 20vh;
+  font-size: 25px;
+}
+
+.serviciosH2H3 h3{
+  color: rgb(121, 9, 9);
+  line-height: 10px;
+  text-decoration:underline;
+}
+
+
+.servicioParrafo p{
+  color: rgb(0, 0, 0);
+  margin: 10px 10px 10px 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  animation-name: servP;
+  animation-duration: 7s;
+  animation-delay: 0s;
+  animation-direction:alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes servP{ 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* CONTACTO */
+
+.contactoH1 {
+  color: red;
+  display: flex;
+  justify-content: start;
+  justify-items: start;
+  align-items: stretch;
+  align-content: stretch;
+  margin: 10px 10px 10px 10px;
+  padding: 0px;
+  border: 5px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: contactoh1;
+  animation-duration: 7s;
+  animation-delay: 0s;
+  animation-direction:alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes contactoh1{ 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.contactoList {
+  color: black;
+  justify-content: left;
+  text-decoration: none;
+  text-align: left;
+  text-indent: left;
+  letter-spacing: 1px;
+  word-spacing: 0px;
+  line-height:  23px;
+  padding-left: 18px;
+  padding-right: 10px;
+  width: 1000px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
+  margin-bottom: auto;
+  border-width: 15px;
+  background-position: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation-name: contactlist;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-direction:alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes contactlist{ 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* CONTACTO */
+
+
+/* REGISTRARSE */
+
+.registrarseH1 {
+  color: red;
+  display: flex;
+  justify-content: start;
+  justify-items: start;
+  align-items: stretch;
+  align-content: stretch;
+  margin: 10px 10px 10px 10px;
+  padding: 0px;
+  border: 5px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: registroh1;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  animation-direction:alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes registroh1{ 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.registrarseTable {
+  color: black;
+  justify-content: left;
+  text-decoration: none;
+  text-align: left;
+  text-indent: left;
+  letter-spacing: 1px;
+  word-spacing: 0px;
+  line-height:  20px 23px;
+  padding-left: 18px;
+  padding-right: 10px;
+  width: 1000px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
+  margin-bottom: auto;
+  border-width: 15px;
+  background-position: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1px;
+  justify-content: start;
+  justify-items: start;
+  align-items: center;
+  align-content: start;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation-name: registable;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-direction:alternate;
+  animation-iteration-count: 1;
+}
+
+@keyframes registable{ 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+}
+/* REGISTRARSE */

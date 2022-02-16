@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./estilos.css">
+  <script src="https://kit.fontawesome.com/9a8205a8c2.js" crossorigin="anonymous"></script>
+  <title>Registrarse</title>
+</head>
+
+<body>
+
+<header>
+  <div class="menuBarra">
+    <nav class="navegacion">
+
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+
+        <li><a href="./empresa.html">Acerca de</a>
+          <ul class="submenu">
+            <li><a href="./empresa.html">Nosotros</a></li>
+          </ul>
+        </li>
+
+        <li><a href="./productos.html">Productos</a>
+          <ul class="submenu">
+            <li><a href="./productos.html">Escapes</a></li>
+        </ul>
+        </li>
+
+        <li><a href="./servicio.html">Servicios</a></li>
+
+        <li><a href="./contacto.html">Contacto</a>
+          <ul class="submenu">
+            <li><a href="#">Registrarse</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section>
+  <h1 class="registrarseH1">Registrarse</h1>
+
+  <div class="registrarseTable">
+    <form action="enviar.php">
+      <fieldset>
+
+        <label for=""> Nombre: </label>
+        <input type="text" placeholder="escriba su nombre" required />
+        <br />
+        <br>
+        <label for="">Apellido: </label>
+        <input type="text" placeholder="escriba su apellido" required />
+        <br />
+        <br>
+        <label for="">Contraseña: </label>
+        <input type="text" placeholder="escriba su contraseña" required />
+        <br>
+        <br>
+        <label for="">Reitere la contraseña: </label>
+        <input type="text" placeholder="reitere su contraseña" required />
+        <br>
+        <br>
+        <label for="">Pais: </label>
+        <input type="text" placeholder="ingrese su region" required />
+        <br />
+        <br />
+        <label for="">Localidad: </label>
+        <input type="text" placeholder="ingrese la Localidad" required />
+        <br />
+        <br />
+        <label for="">E-mail: </label>
+        <input type="text" placeholder="escriba su E-mail" required />
+        <br />
+        <br />
+        <label for="">Indique su sexo: </label>
+        <input type="radio" name="Masculino" value="Masculino" . />
+        <label for="">Masculino</label>
+        <input type="radio" name="Femenino" value="Femenino" . />
+        <label for="">Femenino</label>
+        <br>
+        <br>
+        <input type="checkbox" value="checkbox" required />
+        <label for="">Acepta terminos y condiciones</label>
+        <br />
+        <br />
+        <input type="submit" value="Aceptar" />
+        <input type="reset" value="Reestablecer" />
+
+      </fieldset>
+    </form>
+  </div>
+</section>
+
+<footer class="pie-pagina">
+  <div class="grupo-1">
+    <div class="box">
+      <figure>
+        <a href="#"></a>
+        <img src="../imagen/uch logo.jpg" alt="uch">
+      </figure>
+    </div>
+    <div class="box">
+      <h2>UBICACION</h2>
+      <p>Empresa: Av. 9 de Julio 333, Buenos Aires, Argentina</p>
+      <p>Fabrica: Pilar 555, Buenos Aires, Argentina</p>
+    </div>
+    <div class="box">
+      <h2>SEGUINOS</h2>
+      <div class="red-social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+  </div>
+</div>
+<div class="grupo-2">
+ <small>&copy; 2021 <b>U-C-H</b> - Todos los Derechos Reservados</small>
+</div>
+</body>
+
+</html>
