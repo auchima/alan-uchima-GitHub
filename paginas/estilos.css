@@ -4,7 +4,6 @@ body {
   background-repeat: no-repeat;
   margin: 0px;
   padding: 0px;
-  height: 100%;
 }
 
 /* MENU BARRA */
@@ -92,7 +91,7 @@ body {
 
 .pie-pagina{
   width: 100%;
-  height: 42vh;
+  height: 45vh;
   background-color: #0a141d;
 }
 
@@ -160,7 +159,7 @@ body {
 /* INDEX */
 
 .totalContainer{
-  height: 100vh;
+  height: 50vh;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -188,7 +187,7 @@ h1 {
   color: red;
   letter-spacing: 10px;
   word-spacing: 1px;
-  font-size: 34px;
+  font-family: 'Spline Sans', sans-serif;
 }
 
 h2 {
@@ -196,7 +195,6 @@ h2 {
   text-decoration: none;
   letter-spacing: 1px;
   word-spacing: 0px;  
-  font-size: 27px;
 }
 
 .indexH2 {
@@ -213,7 +211,7 @@ h2 {
   word-spacing: 1px;
   letter-spacing: 1px;
   line-height: 20px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px 10px;
   padding: 0px;
   border: 5px;
   font-family: 'Bitter', serif;
@@ -232,7 +230,7 @@ h2 {
   padding: 0px;
   border: 5px;
   font-family: 'Bitter', serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .indexH2yParrafo{
@@ -251,7 +249,7 @@ h2 {
 }
 
 
-/* .IndexImage {
+.indexImage {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
   grid-template-rows: 30%;
@@ -323,17 +321,11 @@ h2 {
   padding: 0px;
   border: 0px;
   transform: translate(0px, 0px);
-} */
-
-
-
-
+}
 /* INDEX */
 
 
 /* EMPRESA */
-
-
 
 .empresaH1 {
   color: red;
